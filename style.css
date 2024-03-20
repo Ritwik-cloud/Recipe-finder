@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app-name{
+  
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #45a049;
+
+}
+
+#navbar{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.recipe-detais{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0ef51a;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    width: 70%;
+    border-radius: 4rem;
+
+}
+
+#Youtube-link{
+    font-size: 2rem;
+}
+.close-btn{
+    background: none;
+    border: none;
+    padding: 1rem ;
+    font-size: 3rem;
+
+}
+#colse{
+  
+    background: none;
+
+}
+
+
+/* Base styles for the recipe cards */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem; /* Add some padding */
+}
+
+.recipe {
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* margin: 0.5rem; */
+    width: 200px; /* Set a fixed width for each recipe card */
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+    .recipe {
+        width: 400px; /* Adjust the width for larger screens */
+    }
+  
+}
+
+.recipe img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#recipe-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#instructions {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.ingredients{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#read-more-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* css loader animation */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #45a049;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
